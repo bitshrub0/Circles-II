@@ -45,19 +45,19 @@ function setupBars(x){
 function makeCircleEffectText(){
     let string = ""
     for (let i = 2; i < data.numbers.length; i++) {
-        string += `Circle ${i+1} (${formatWhole(data.numbers[i])}%): ${format(higherEffects[i-2])}x to the Circle ${i} effect.\n`
+        string += `Circle ${i+1} (${formatWhole(data.numbers[i])}%): ${format(higherEffects[i-2])}x to the effect of Circle ${i}.\n`
     }
     return string
 }
 
 function circleTextControls(){
     document.getElementById("descText").style.display = data.textTriggers[0]?`flex`:`none`
-    document.getElementById("descText").innerText = `Circle 2 (${formatWhole(data.numbers[1])}%) provides a ${format(effect)}x multiplier to the speed of Circle 1.`
+    document.getElementById("descText").innerText = `Circle 2 (${formatWhole(data.numbers[1])}%) provides a ${format(effect)}x multiplier to the rotation speed of Circle 1.`
     document.getElementById("descText2").style.display = data.textTriggers[1]?`block`:`none`
-    document.getElementById("descText2").innerHTML = `All circles above Circle 2 multiply the effect of the previous Circle.<br><span style="font-size: 0.9rem">Hover for more info.</span>`
+    document.getElementById("descText2").innerHTML = `All circles above Circle 2 multiply the effect of the previous Circle.<br><span style="font-size: 0.9rem">Hover Here for more data.</span>`
 
     DOM(`descText3`).innerText = makeCircleEffectText()
 
-    DOM(`descText4`).style.display = data.numbers.length > 5 ? `block` : `none`
-    document.getElementById("descText4").innerText = `Circle 6 (${formatWhole(data.numbers[5])}%) increases the minimum percent of all lower Circles by ${format(minimumNumber(0).sub(1))}%`
+    DOM(`descText4`).style.display = data.numbers.length > 7 ? `block` : `none`
+    document.getElementById("descText4").innerText = `Circle 8 (${formatWhole(data.numbers[7])}%) increases the minimum percentage of all lower Circles by ${format(minimumNumber(0).sub(1))}%`
 }
