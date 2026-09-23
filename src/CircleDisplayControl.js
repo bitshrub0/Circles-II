@@ -4,7 +4,7 @@ let progressBars = [document.getElementById("bar0")]
 let progressValues = [D(0)];
 
 function progress(i, x){
-    let hexAdds = [126+(i*(15+(i*4))), i*(15+(i*4)), 180-(i*(10+(i*4)))]
+    let hexAdds = [126+(i*(20+(i*4))), 255, 180-(i*(15+(i*4)))]
     progressValues[i]=x;
     valueContainer.textContent = `${format(progressValues[0])}`
     progressBars[i].style.background = `conic-gradient(
