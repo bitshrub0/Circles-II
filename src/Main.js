@@ -22,8 +22,8 @@ function gainNumber(lowestGain){
     }
 }
 
-let minimumNumber = (i) => i < 5
-    ? data.numbers[5] !== undefined ? data.numbers[5].plus(1) : D(1)
+let minimumNumber = (i) => i < 7
+    ? data.numbers[7] !== undefined ? data.numbers[7].plus(1) : D(1)
     : D(1)
 function numberReset(x){
     for(let i=0;i<x;i++) data.numbers[i] = minimumNumber(i)
