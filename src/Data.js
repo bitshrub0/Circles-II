@@ -1,4 +1,6 @@
 const D = x => new Decimal(x)
+const jokes = ["That's Numberwang", "Might be contaminated", "Hi Flame", "NOTE: Put joke here", "I like this game", "Support Lizard Panini", "Join the Gwa", "EEEEEEEEEEEEEEEEEEEEEEEE", "quack", "360 258 272"] // it's joke time people
+let jokeVal = jokes[getRandomInt(jokes.length)]
 //create all the variables in a data object for saving
 function getDefaultObject() {
     return {
