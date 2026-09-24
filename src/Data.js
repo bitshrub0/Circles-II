@@ -4,7 +4,7 @@ const jokes = ["That's Numberwang", "Might be contaminated", "Hi Flame", "NOTE: 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-let jokeVal = jokes[getRandomInt(jokes.length)] // jokes!
+let jokeVal = jokes[getRandomInt(9)] // jokes!
 //create all the variables in a data object for saving
 function getDefaultObject() {
     return {
