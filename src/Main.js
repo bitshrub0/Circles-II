@@ -4,7 +4,7 @@ function gainNumber(lowestGain){
     data.numbers[0] = data.numbers[0].plus(lowestGain)
 
     for(let i=0;i<data.numbers.length;i++){
-        if(data.numbers[i].gte(25) && data.numbers[i+1] !== undefined){
+        if(data.numbers[i].gte(100) && data.numbers[i+1] !== undefined){
 
             //Circle 2 Behavior if Circle 1 is 'forever' at 100%
             if(i === 0 && lowestGain.gte(25)){
