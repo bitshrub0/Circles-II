@@ -9,9 +9,9 @@ function gainNumber(lowestGain){
             //Circle 2 Behavior if Circle 1 is 'forever' at 100%
             if(i === 0 && lowestGain.gte(25)){
                 // console.log(`Ran! Current Circle 2: ${data.numbers[1]}, it should increase by ${lowestGain.div(100)}`)
-                data.numbers[0] = 1
                 data.numbers[1] = data.numbers[1].plus(lowestGain.div(100))
                 numberReset(1)
+                numberReset(0)
                 // console.log(`It is now ${data.numbers[1]}`)
 
                 continue // Ensure that Circle 2 is only increased once per loop
