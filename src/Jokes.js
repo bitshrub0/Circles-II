@@ -8,8 +8,11 @@ const jokes = ["That's Numberwang", "Might be contaminated", "Hi Flame", "NOTE: 
                "Bee", "Hover for more info", "N+7", "Now with 33% more circles", "HONK", "No Yes Yes No Yes Yes No No Yes What?", "My brain grows weary of these jokes", 
                "Belated and Dated, Better Off Buried", "Numbers!", "Whimsy!", "3<5", "let numbers = 906,150,257"] // it's joke time people
 //get random integer
-function getRandomInt(max) {
+function ranInt(max) {
   return Math.floor(Math.random() * max);
 }
-let jokeVal = jokes[getRandomInt(jokes.length)] // jokes!
-let jokeVal2 = jokes[getRandomInt(jokes.length)] // more jokes!
+function ranInt2(max2) {
+  return Math.floor(Math.random() * max2);
+}
+let jokeVal = jokes[ranInt(jokes.length)] // jokes!
+let jokeVal2 = jokes[ranInt2(jokes.length)] // more jokes!
