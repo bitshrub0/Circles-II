@@ -55,11 +55,10 @@ function circleTextControls(){
     document.getElementById("descText").innerText = `Circle 2 (${formatWhole(data.numbers[1])}%) provides a ${format(effect)}x multiplier to the rotation speed of Circle 1.`
     document.getElementById("descText2").style.display = data.textTriggers[1]?`block`:`none`
     document.getElementById("descText2").innerHTML = `All circles above Circle 2 multiply the effect of the previous Circle.<br><span style="font-size: 0.9rem">${jokeVal}</span>`
-    document.getElementById("descText6").innerHTML = `${jokeVal2}`
-
-
+    
     DOM(`descText3`).innerText = makeCircleEffectText()
 
     DOM(`descText4`).style.display = data.numbers.length > 7 ? `block` : `none`
     document.getElementById("descText4").innerText = `Circle 8 (${formatWhole(data.numbers[7])}%) increases the minimum percentage of all lower Circles by ${format(minimumNumber(0).sub(1))}%`
+    document.getElementById("descText6").innerText = `${jokeVal2}`
 }
